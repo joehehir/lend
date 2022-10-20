@@ -24,7 +24,7 @@ Usage:
 ### Example
 
 ```sh
-% curl -fsSL https://github.com/joehehir/lend/live/ubuntu-lts/lend-request.sh -o lend-request.sh
+% curl -fsSL https://raw.githubusercontent.com/joehehir/lend/master/live/ubuntu-lts/lend-request.sh -o lend-request.sh
 % /bin/bash lend-request.sh \
     --compose-file "/absolute/path/to/docker-compose.yml" \
     --letsencrypt-registration-email "admin@example.com" \
@@ -58,7 +58,7 @@ Usage:
 ### Example
 
 ```sh
-% curl -fsSL https://github.com/joehehir/lend/live/ubuntu-lts/lend-renew.cron.sh -o lend-renew.cron.sh
+% curl -fsSL https://raw.githubusercontent.com/joehehir/lend/master/live/ubuntu-lts/lend-renew.cron.sh -o lend-renew.cron.sh
 % /bin/bash lend-renew.cron.sh \
     --compose-file "/absolute/path/to/docker-compose.yml" \
     --cron-mailto "" \
