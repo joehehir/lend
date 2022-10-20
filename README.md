@@ -2,6 +2,8 @@
 
 `lend` is a collection of convenience scripts for SSL/TLS configuration.
 
+## [Live](https://github.com/joehehir/lend/tree/master/live)
+
 ## Local
 
 > `lend.sh`
