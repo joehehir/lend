@@ -2,7 +2,7 @@
 set -eu
 
 # Let's Encrypt NGINX Docker (lend)
-# https://github.com/joehehir/lend/lend.sh
+# https://github.com/joehehir/lend/blob/master/lend.sh
 # v1.0.0
 
 readonly SCRIPT_NAME="lend"
@@ -12,7 +12,7 @@ readonly EPHEMERAL_LETSENCRYPT_DIR="./.${SCRIPT_NAME}.bak"
 usage() {
     cat << EOF >&2
 Usage:
-    ./${SCRIPT_NAME}.sh -v <volume> <server_name> [<server_name> ...]
+    /bin/bash ${SCRIPT_NAME}.sh -v <volume> <server_name> [<server_name> ...]
 
     -v <volume>, --volume-letsencrypt <volume>  /etc/letsencrypt volume name
     <server_name>                               Server names as defined in the server_name directive

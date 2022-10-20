@@ -10,7 +10,7 @@
 
 ```text
 Usage:
-    ./lend.sh -v <volume> <server_name> [<server_name> ...]
+    /bin/bash lend.sh -v <volume> <server_name> [<server_name> ...]
 
     -v <volume>, --volume-letsencrypt <volume>  /etc/letsencrypt volume name
     <server_name>                               Server names as defined in the server_name directive
@@ -20,8 +20,8 @@ Usage:
 ### Example
 
 ```sh
-% curl -fsSL -o lend.sh https://github.com/joehehir/lend/lend.sh
-% ./lend.sh -v "letsencrypt" "example.test www.example.test"
+% curl -fsSL https://raw.githubusercontent.com/joehehir/lend/master/lend.sh -o lend.sh
+% /bin/bash lend.sh -v "letsencrypt" "example.test www.example.test"
 [info]: /etc/hosts updated
 
 # [inspect]
