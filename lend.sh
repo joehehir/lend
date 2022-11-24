@@ -96,8 +96,8 @@ main() {
     [ -f /etc/hosts ] \
         && sudo -- sh -c -e "grep -qxF \"127.0.0.1 ${server_names[*]}\" /etc/hosts \
             || printf \"%s\n\" \"127.0.0.1 ${server_names[*]}\" >> /etc/hosts" \
-        && printf "[info]: %s\n" "/etc/hosts updated" \
-        || printf "[info]: %s\n" "/etc/hosts not updated" >&2
+        && printf "[info]: %s\n\n" "/etc/hosts updated" \
+        || printf "[warn]: %s\n\n    %s\n\n" "/etc/hosts not updated" "127.0.0.1 ${server_names[*]}" >&2
 
     for domains in "${server_names[@]}"
     do
